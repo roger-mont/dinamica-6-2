@@ -12,8 +12,40 @@
 </head>
 
 <body>
-  <!-- Seu código aqui -->
-  
+  <header class="header-trybe">Trybe Hotel</header>
+  <img src="" alt="">
+
+  <section class="hotel-form">
+    <p>Check-in</p>
+    <label for="checkin"><input class='form-control inputCheckin' type="date" name="checkin" id="checkin"></label>
+    <p>Check-out</p>
+    <label for="checkout"><input class='form-control inputCheckout' type="date" name="checkout" id="checkout"></label>
+  </section>
+
+  <section class="hotel-form">
+    <p>Acomodação</p>
+    <label for="comum"><input type="radio" id="comum" class="bedroom" name="acomodacao">Comum</label>
+    <label for="club"><input type="radio" id="club" class="bedroom" name="acomodacao">club</label>
+    <label for="luxo"><input type="radio" id="luxo" class="bedroom" name="acomodacao">Luxo</label>
+  </section>
+
+  <section class="hotel-form">
+    <p>Numero de Hospedes</p>
+    <label for="hospedes">
+    <select name="pessoas" id="hospedes">
+      <option value="1" class="nPessoas">1</option>
+      <option value="2" class="nPessoas">2</option>
+      <option value="3" class="nPessoas">3</option>
+      <option value="4" class="nPessoas">4</option>
+    </select>
+  </label>
+  </section>
+
+  <section class="hotel-form">
+    <textarea class="obs" name="" id="" cols="30" rows="10" placeholder="Observações"></textarea>
+  </section>
+
+  <button type="submit" class="btn btn-success">Reservar</button>
 </body>
 
 </html>
